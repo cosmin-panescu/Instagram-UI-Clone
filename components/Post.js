@@ -17,7 +17,7 @@ const Post = ({ username, profilePicture, postPhoto, caption, likes, commentsNum
                 <div className="flex items-center p-3">
                     <div className="flex items-center w-full">
                         <div className="h-8 w-8 mr-3">
-                            <img src={profilePicture.src} alt="User" className='rounded-full' />
+                            <Image width={500} height={500} src={profilePicture.src} alt="User" className='rounded-full' />
                         </div>
                         <p className='font-semibold text-sm'>{username}</p>
                     </div>
@@ -28,7 +28,7 @@ const Post = ({ username, profilePicture, postPhoto, caption, likes, commentsNum
 
                 {/* Photo */}
                 <div className="">
-                    <img src={postPhoto.src} alt="Post" />
+                    <Image width={500} height={500} src={postPhoto.src} alt="Post" />
                 </div>
 
                 <div className="m-3">
@@ -74,7 +74,7 @@ const Post = ({ username, profilePicture, postPhoto, caption, likes, commentsNum
                                     <p className='truncate'>{comment.comment}</p>
                                 </div>
                                 <div className="w-3 h-3 cursor-pointer shrink-0">
-                                    <Image src={hearth} alt="LIKE"/>
+                                    <Image src={hearth} alt="LIKE" />
                                 </div>
                             </div>
                         ))}
