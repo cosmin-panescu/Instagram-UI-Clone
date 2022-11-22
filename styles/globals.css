@@ -1,3 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .Btn {
+    @apply w-6 h-6 shrink-0 cursor-pointer;
+  }
+
+  .custom-font {
+    @apply font-bold text-sm;
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +27,14 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 20px;
+  height: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #efefef;
+  border-radius: 4px;
 }
