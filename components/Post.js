@@ -17,18 +17,18 @@ const Post = ({ username, profilePicture, postPhoto, caption, likes, commentsNum
                 <div className="flex items-center p-3">
                     <div className="flex items-center w-full">
                         <div className="h-8 w-8 mr-3">
-                            <img src={profilePicture.src} alt="" className='rounded-full' />
+                            <img src={profilePicture.src} alt="User" className='rounded-full' />
                         </div>
                         <p className='font-semibold text-sm'>{username}</p>
                     </div>
                     <div className="h-6 w-6 cursor-pointer">
-                        <Image src={dots} />
+                        <Image src={dots} alt="..." />
                     </div>
                 </div>
 
                 {/* Photo */}
                 <div className="">
-                    <img src={postPhoto.src} alt="" />
+                    <img src={postPhoto.src} alt="Post" />
                 </div>
 
                 <div className="m-3">
@@ -37,17 +37,17 @@ const Post = ({ username, profilePicture, postPhoto, caption, likes, commentsNum
                         <div className="flex justify-between">
                             <div className="flex space-x-4">
                                 <div className="Btn">
-                                    <Image src={hearth} />
+                                    <Image src={hearth} alt="LIKE" />
                                 </div>
                                 <div className="Btn">
-                                    <Image src={comment} />
+                                    <Image src={comment} alt="COMM" />
                                 </div>
                                 <div className="Btn">
-                                    <Image src={message} />
+                                    <Image src={message} alt="MESS" />
                                 </div>
                             </div>
                             <div className="Btn">
-                                <Image src={save} />
+                                <Image src={save} alt="SAVE" />
                             </div>
                         </div>
                         <div className="mt-2 custom-font">
@@ -68,13 +68,13 @@ const Post = ({ username, profilePicture, postPhoto, caption, likes, commentsNum
                     {/* Comments */}
                     <div className="">
                         {comments.map(comment => (
-                            <div className="flex justify-between max-w-24 overflow-y-auto">
+                            <div key={comment.comment} className="flex justify-between max-w-24 overflow-y-auto">
                                 <div className="flex items-center">
                                     <p className='cursor-pointer custom-font mr-2 whitespace-nowrap'>{comment.username}</p>
                                     <p className='truncate'>{comment.comment}</p>
                                 </div>
                                 <div className="w-3 h-3 cursor-pointer shrink-0">
-                                    <Image src={hearth} />
+                                    <Image src={hearth} alt="LIKE"/>
                                 </div>
                             </div>
                         ))}
@@ -90,7 +90,7 @@ const Post = ({ username, profilePicture, postPhoto, caption, likes, commentsNum
                     <div className="flex justify-between p-1">
                         <div className="flex">
                             <div className="Btn mr-4">
-                                <Image src={emojy} />
+                                <Image src={emojy} alt="0" />
                             </div>
 
                             <input

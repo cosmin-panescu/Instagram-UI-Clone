@@ -16,13 +16,13 @@ const Header = () => {
 
                 {/* Left */}
                 <div className='w-28 flex'>
-                    <Image src={instagram} />
+                    <Image src={instagram} alt="Instagram"/>
                 </div>
 
                 {/* Middle */}
                 <div className='hidden w-72 mx-4 sm:flex relative '>
                     <div className='w-3 h-full ml-2 absolute flex items-center'>
-                        <Image src={search} />
+                        <Image src={search} alt="0" />
                     </div>
                     <input
                         type="text"
@@ -34,26 +34,26 @@ const Header = () => {
                 {/* Right */}
                 <div className="flex space-x-5">
                     <div className="Btn hidden sm:flex">
-                        <Image src={home} />
+                        <Image src={home} alt="Home" />
                     </div>
                     <div className="Btn hidden sm:flex relative">
-                        <Image src={message} />
+                        <Image src={message} alt="Message" />
                         <div className="absolute flex -top-1 left-3.5 items-center justify-center bg-red-500 text-white rounded-full w-4 h-4 text-xs">
                             1
                         </div>
                     </div>
                     <div className="Btn">
-                        <Image src={upload} />
+                        <Image src={upload} alt="Upload" />
                     </div>
                     <div className="Btn hidden sm:flex">
-                        <Image src={discover} />
+                        <Image src={discover} alt="Discover" />
                     </div>
                     <div className="Btn hidden sm:flex">
-                        <Image src={hearth} />
+                        <Image src={hearth} alt="Notification" />
                     </div>
                     <div className="flex">
                         <div className="Btn mr-5">
-                            <Image src={profile} className="aspect-square rounded-full" />
+                            <Image src={profile} alt="User" className="aspect-square rounded-full" />
                         </div>
                         <button className='cursor-pointer text-[#0095f6] font-semibold whitespace-nowrap text-sm'>Sign Out</button>
                     </div>

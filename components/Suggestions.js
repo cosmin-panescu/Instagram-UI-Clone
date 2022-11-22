@@ -20,7 +20,7 @@ const Suggestions = () => {
             </div>
 
             {suggestions.map(profile => (
-                <div className="flex items-center justify-between mt-6">
+                <div key={profile.userId} className="flex items-center justify-between mt-6">
                     <div className="flex items-center">
                         <div className="cursor-pointer w-8 h-8">
                             <img src={profile.avatar} className="rounded-full" alt="Avatar" />
