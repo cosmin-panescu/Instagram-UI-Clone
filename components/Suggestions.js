@@ -1,4 +1,5 @@
 import { faker } from '@faker-js/faker';
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 
 const Suggestions = () => {
@@ -23,7 +24,7 @@ const Suggestions = () => {
                 <div key={profile.userId} className="flex items-center justify-between mt-6">
                     <div className="flex items-center">
                         <div className="cursor-pointer w-8 h-8">
-                            <img src={profile.avatar} className="rounded-full" alt="Avatar" />
+                            <Image width={500} height={500} src={profile.avatar} className="rounded-full" alt="Avatar" />
                         </div>
                         <div className="ml-4">
                             <p className="text-sm font-semibold cursor-pointer ">{profile.username}</p>
