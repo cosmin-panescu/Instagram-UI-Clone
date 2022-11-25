@@ -1,3 +1,5 @@
+![Untitled](https://user-images.githubusercontent.com/107345473/203930599-d3bb35fc-a642-48ef-b720-2646ef95ae6f.png)
+
 I made this project following the desire to practice Next.js and Tailwind CSS, because I wanted to put into practice the new things I learned about the Front-end.
 
 Instagram Interface (UI) Clone.
