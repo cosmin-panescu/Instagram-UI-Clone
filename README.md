@@ -1,3 +1,25 @@
+I made this project following the desire to practice Next.js and Tailwind CSS, because I wanted to put into practice the new things I learned about the Front-end.
+
+Instagram Interface (UI) Clone.
+
+Languages, Frameworks used:
+- HTML
+- CSS
+- Tailwind CSS
+- React
+- Next.js
+
+Technologies and Tools used:
+- API to generate fake users
+- Webpack
+- NPM
+- VSC
+
+The project includes features like:
+- display random fake users
+- complete Instagram Interface
+- responsive for mobile screens
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
